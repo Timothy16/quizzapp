@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   <div class="wrapper">
+       <header class="header">quiz game</header>
+       <div class="line_under"></div>
+       <p id="counter"></p>
+       <div class="question" id="questionBox">
+       
+       </div>
+       <div class="options">
+           <ul class="upper" id="ul">
+               <li id="op1"  onclick="button(this)"></li>
+               <li id="op2"  onclick="button(this)"></li>
+               <li id="op3"  onclick="button(this)"></li>
+               <li id="op4" onclick="button(this)"></li>
+               <li id="op5" onclick="button(this)"></li>
+           </ul>
+       </div>
+       <div class="score">
+           <div class="next">
+                <button type="button" id="button" onclick="next()">Next</button>
+           </div>
+           <div class="score_card" id="card">
+            Score : <span id="scoreCard">0</span>
+           </div>
+       </div>
+
+       <div class="home">
+           <p><a href="index.html">Click to take Quiz</a></p>
+       </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
